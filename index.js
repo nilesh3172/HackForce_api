@@ -12,7 +12,7 @@ import bodyParser from "body-parser";
 const app = express();
 dotenv.config();
 
-const port =  8800
+const port = process.env.PORT || 8800
 
 const connect = async () => {
   try {
